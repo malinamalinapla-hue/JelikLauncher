@@ -1,0 +1,16 @@
+[package]
+name = "voxel-game"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+macroquad = "0.4"
+flate2 = "1"
+
+[package.metadata.android]
+package_name = "rs.jelik.launcher"
+label = "JelikLauncher"
+build_targets = ["aarch64-linux-android"]
+
+[[package.metadata.android.permission]]
+name = "android.permission.INTERNET"
